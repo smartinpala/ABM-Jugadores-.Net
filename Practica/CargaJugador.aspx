@@ -18,7 +18,7 @@
     </style>
 
     <div class="row">
-        <h2>Formulario de alta de jugador</h2>
+        <h2><%=H2%></h2>
         <div class="col-6">
             <div class="mb-3">
                 <label for="txtId" class="form-label">Id: </label>

@@ -11,8 +11,10 @@ namespace Practica
 {
     public partial class CargaJugador : System.Web.UI.Page
     {
+        public string H2 { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
+            H2 = "Formulario de alta de jugador";
             if (!IsPostBack)
             {
                 ddlEquipo.Items.Add("Olimpico (La Banda)");
@@ -26,6 +28,7 @@ namespace Practica
 
             if (Request.QueryString["id"] != null)
             {
+                H2 = "Destalles del jugador";
                 if (!IsPostBack)
                 {
                     //Quiere decir que viene para editar
